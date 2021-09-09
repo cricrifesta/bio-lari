@@ -15,32 +15,78 @@ html {
 
 body {
 	padding: 30px;
-	color:  fff;
-	/* background-color: #17171C; */
+	color:  #fff;
+  background-image: url(/img/background_desktop_larissa.jpeg);
+  
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
 }
 
 /* header */
 
 header {
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 110px;
 }
+
 header img {
   height: 135px;
   width: 135px;
   border-radius: 50%;
   margin-bottom: 30px;    
 }
+
 header h1 {
+  font-size: 55px;
 	color: rgb(255, 0, 179);
+  text-shadow: 1px 1px 3px rgb(255, 255, 255), -1px -1px 3px #fff, 1px 1px rgb(221, 221, 221), -1px -1px #fff;
 }
-header p {
-  font-size: 120%;
-  color: rgb(231, 107, 194);
+
+/* efects */
+
+header p.line {
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  font-size: 22px;
+  color: rgb(161, 43, 126);
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
 }
+
+
+/* animation */
+
+.typing-animation {
+  animation: blinkCursor 1s steps(10) infinite normal, typing 1.7s steps(20) 1s normal both;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 13em;
+  }
+}
+
+@keyframes blinkCursor{
+  from {
+    border-right-color: rgb(255, 255, 255);
+  }
+  to {
+    border-right-color: transparent;
+    
+  }
+}
+
 
 /* section */
 
@@ -50,6 +96,7 @@ section{
 	flex-wrap: wrap;
 	flex-grow: 1;
 	margin: 20px;
+  padding-bottom: 20px;
 }
 
 section a{
@@ -62,7 +109,7 @@ section a{
 
 section div{
   min-height: 100px;
-  border-radius: 8px;
+  border-radius: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,4 +147,49 @@ footer {
 footer a#vini{
   text-decoration: none;
   color: #f11fb2;
+  font-weight: bold;
+  font-size: 110%;
+  /* color: #fff; */
+}
+
+@media only screen and (max-device-width: 300px) {
+  body {
+    background-image: url(/img/background_mobile_larissa.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+  }
+
+  header {
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+  
+  header p.line {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  body {
+    background-image: url(/img/background_mobile_larissa.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  header {
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header p.line {
+    font-size: 18px;
+  }
 }
