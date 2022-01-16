@@ -19,7 +19,7 @@ html {
 body {
 	padding: 30px;
 	color:  #fff;
-  background-image: url(/bio-lari/img/background_desktop_larissa.jpeg);
+  background-image: url(/img/background_desktop_larissa.jpeg);
   
 
   background-repeat: no-repeat;
@@ -161,7 +161,7 @@ footer a#vini{
 
 @media (max-width: 768px) {
   body {
-    background-image: url(/bio-lari/img/background_mobile_larissa.jpeg);
+    background-image: url(/img/background_mobile_larissa.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -182,7 +182,7 @@ footer a#vini{
   @media (max-width: 375px) {
     body {
       background-color: #f11fb2;
-      background-image: url(/bio-lari/img/background_mobile_larissa.jpeg);
+      background-image: url(/img/background_mobile_larissa.jpeg);
       background-repeat: no-repeat;
       background-size: 210%;
       background-position: top;
@@ -198,7 +198,7 @@ footer a#vini{
 
 @media (max-width: 320px) {
   body {
-    background-image: url(/bio-lari/img/background_mobile_larissa.jpeg);
+    background-image: url(/img/background_mobile_larissa.jpeg);
     background-repeat: no-repeat;
     background-size: 250%;
     background-position: top;
